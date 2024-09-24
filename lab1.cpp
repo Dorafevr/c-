@@ -30,7 +30,7 @@ iPointer=iPointer+2;//pointer arithmetic
 arr[0]=5;
 //std::cin>> a;
 
-// std::array<int, 6> arr2;//не работат = для создание массива
+// std::array<int, 6> arr2;// для создания массива
 std::cout<<i<<std::endl;
 std::cout<<number<<std::endl;
 std::cout<<arr[0]<<std::endl;
