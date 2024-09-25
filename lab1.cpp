@@ -17,7 +17,7 @@ for(int il : arr){
 }
  
 int* iPointer=&i;
-//int* iPointer=&arr[1];
+ 
 
 int* ter=&i;
 number=*iPointer; 
