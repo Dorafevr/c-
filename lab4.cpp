@@ -1,5 +1,7 @@
 #include <iostream>
-void Test(int number){
+
+void Test(int number)
+{
     if (number == 5)//guard clause
     {
         std::cout << "The number is 5" << std::endl;
@@ -21,7 +23,8 @@ void Test(int number){
             {
                 std::cout << "The number is 6" << std::endl;
             }
-        }
+        }  
+    }
 }
 int main()
 {
