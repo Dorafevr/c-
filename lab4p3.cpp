@@ -1,10 +1,11 @@
 #include <iostream>
 #include <span>
 #include <array>
+#include <cassert>
 #include <cstddef>
 void product(std::span<int> inputOutput, std::span<int> coefficients)
 {
-    //assert(inputOutput.size() == coefficients.size());
+    assert(inputOutput.size() == coefficients.size());
     int s = 0;
     /* for (int i = 0; i < inputOutput.size(); i++) {
 

@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cassert>
 
 int main() {
     std::string_view h = "000011110f";
@@ -27,5 +28,9 @@ int main() {
     std::cout << coint << std::endl;
     std::cout << first << std::endl;
     std::cout << other << std::endl;
+
+
+
+
 
 }
