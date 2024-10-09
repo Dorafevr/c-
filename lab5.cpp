@@ -1,4 +1,4 @@
-#include <iostream>
+include <iostream>
 #include <cassert>
 int app(std::string_view h) {
     int coint = 0;
@@ -29,9 +29,9 @@ int app(std::string_view h) {
             other++;
         }
     }
-    std::cout << coint << std::endl;
-    std::cout << first << std::endl;
-    std::cout << other << std::endl;
+    std::cout << "one " << coint << std::endl;
+    std::cout << "zero" << first << std::endl;
+    std::cout << "other" << other << std::endl;
     return coint;
 }
 void runTests()
@@ -43,17 +43,12 @@ void runTests()
     std::cout << "check";
 
 }
-
-
 int main() {
 
-    std::string_view h = "001011";
+    std::string_view h = "101011";
     app(h);
     runTests();
-
-
     return 0;
-
 
 
 }
