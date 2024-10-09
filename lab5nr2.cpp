@@ -5,16 +5,16 @@
 char app(std::array<char, 13 >  h) {
     int coint = 0;
     int other = 0;
-    int firstSpaceIndex = -1;
+    int space = -1;
     for (int i = 0; i < h.size(); i++) {
         char c = h[i];
         if (c == ' ') {
             coint++;
-            if (firstSpaceIndex == -1) {
-                firstSpaceIndex = i;
+            if (space == -1) {
+                space = i;
             }
-            std::span<char> sp{ h.data() + firstSpaceIndex + 1, h.size() - firstSpaceIndex - 1 };
-            std::cout << " after space: " << sp.data() << std::endl;
+            std::span<char> sp{ h.data() + space + 1, h.size() - space - 1 };
+            std::cout << "after space: " << sp.data() << std::endl;
         }
         else {
             other++;
@@ -34,7 +34,7 @@ void runTests()
     assert(app(test3) == 3);
     std::array<char, 13> test4{ "ahbhbhnonhh" };
     assert(app(test4) == 0);
-    // std::cout << "check";
+    
 }
 int main() {
     std::array<char, 13 > ar1{ "hello world!" };
