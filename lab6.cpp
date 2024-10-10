@@ -7,8 +7,6 @@ int hello(int hello) {
     return hello;
 }
 int main() {
-
     hello(9);
-
-
 }
+//ошибка происходит, из за того что она ничего не возвращает. Поэтому валидное тело(return hello)
