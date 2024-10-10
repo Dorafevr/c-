@@ -38,9 +38,6 @@ void runTests()
 }
 int main() {
     std::array<char, 13 > ar1{ "hello world!" };
-    std::span<char>  sp{ ar1.data() + 5, ar1.size() - 5 };
-    std::cout << ar1.data() << std::endl;
-    std::cout << sp.data() << std::endl;
     app(ar1);
     runTests(); return 0;
 }
