@@ -1,3 +1,0 @@
-"second file text" 
-
-changes made in main branch
