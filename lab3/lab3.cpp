@@ -1,19 +1,19 @@
-struct Leg// тип struct 
+struct Leg// С‚РёРї struct 
 {
-    int length;// тип int, объект length
+    int length;// С‚РёРї int, РѕР±СЉРµРєС‚ length
 };
 
-struct Arm// тип struct 
+struct Arm// С‚РёРї struct 
 {
-    int power;// тип int, объект power
+    int power;// С‚РёРї int, РѕР±СЉРµРєС‚ power
 };
 
-struct Person// тип struct 
+struct Person// С‚РёРї struct 
 {
     std::array<Leg, 2> legs;
-    Arm arms[2];// объекты
+    Arm arms[2];// РѕР±СЉРµРєС‚С‹
 };
-int main()// тип int
+int main()// С‚РёРї int
 {
-    Person person;//объект
+    Person person;//РѕР±СЉРµРєС‚
 }

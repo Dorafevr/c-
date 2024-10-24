@@ -32,7 +32,7 @@ int main()
     std::cout << "Oranges:";
     std::cin >> oranges;
     FruitCounts(apples, pears, oranges);
-    //bool p=apples>5 && pears<8 && oranges>(2*apples);//âğåìåííàÿ ïåğåìåííàÿ
+    //bool p=apples>5 && pears<8 && oranges>(2*apples);//Ğ²Ñ€ĞµĞ¼ĞµĞ½Ğ½Ğ°Ñ Ğ¿ĞµÑ€ĞµĞ¼ĞµĞ½Ğ½Ğ°Ñ
    /* bool a=apples>5;
     bool b= pears<8;
     bool c= oranges>(2*apples);

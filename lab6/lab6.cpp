@@ -9,5 +9,5 @@ int hello(int hello) {
 int main() {
     hello(9);
 }
-//она обьявлена int hello(int hello);
+// объявлена функция int hello(int hello);
 //ошибка происходит из-за того что в функции ничего нет (то есть тела нет функции)
