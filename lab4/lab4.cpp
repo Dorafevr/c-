@@ -7,8 +7,7 @@ void Test(int number)
         std::cout << "The number is 5" << std::endl;
         return;//early return
     }
-    else
-    {
+    
         std::cout << "The number is not 5" << std::endl;
 
         if (number % 2 == 1)
@@ -24,7 +23,7 @@ void Test(int number)
                 std::cout << "The number is 6" << std::endl;
             }
         }  
-    }
+    
 }
 int main()
 {
