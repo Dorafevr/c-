@@ -13,7 +13,6 @@ struct Person// тип struct
     std::array<Leg, 2> legs;
     Arm arms[2];// объекты
 };
-
 int main()// тип int
 {
     Person person;//объект
