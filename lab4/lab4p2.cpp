@@ -5,7 +5,7 @@ void FruitCounts(int a, int p, int o)
     {
         bool apple=a>5;
         bool pear= p<8;
-        bool orange= o>(2*a);
+        bool orange= o==(2*a);
         bool compare =apple &&pear && orange;
         if(compare)
         {
