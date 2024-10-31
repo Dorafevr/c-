@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cassert>
 int app(std::string_view h) {
-    int coint = 0;
+    int count = 0;
     int first = 0;
     int other = 0;
     /*for (char c : h) {
@@ -20,19 +20,13 @@ int app(std::string_view h) {
         char c = h[i];
 
         if (c == '1') {
-            coint++;
+            count++;
         }
-        else if (c == '0') {
-            first++;
-        }
-        else {
-            other++;
-        }
+      
     }
-    std::cout << "one " << coint << std::endl;
-    std::cout << "zero" << first << std::endl;
-    std::cout << "other" << other << std::endl;
-    return coint;
+    std::cout << "one " << count << std::endl;
+    
+    return count;
 }
 void runTests()
 {
