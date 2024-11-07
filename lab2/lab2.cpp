@@ -1,13 +1,13 @@
 #include <string.h>
 #include <iostream>
 
-struct TwoInts // создаем struct, где содержатся 2 переменные
+struct TwoInts // создаем тип, где содержатся 2 переменные
 {
     int a; 
     int b;
 };
 
-struct StructWithArray  // создаем struct, где содержатся массив и указатель
+struct StructWithArray  // создаем тип, где содержатся массив и указатель
 {
     int arr[4];
     int* someNumber;
@@ -15,18 +15,18 @@ struct StructWithArray  // создаем struct, где содержатся м
 
 int main()
 {
-    TwoInts i2 = { };
-    i2.a = 5; // присваеваем (из struct TwoInts) а=5
+    TwoInts i2 = { };//создает переменную типа TwoInt  и присваевает значения 0
+    i2.a = 5; // присваеваем а=5
     i2.b = 7;
 
     std::cout << i2.a << std::endl;// выводит 5
     std::cout << i2.b << std::endl;//выводит 7
     
     StructWithArray s = { };
-    s.arr[0] = 10;// присваеваем 1 (то есть 0) элементу массива 10
+    s.arr[0] = 10;// присваеваем  0 элементу массива 10
 
     StructWithArray s1 = { };
-    s1.arr[0] = 15;// присваеваем 1 (то есть 0) элементу массива 15
+    s1.arr[0] = 15;// присваеваем 0 элементу массива 15
 
     StructWithArray* sPointer = &s;// создаем указатель на адресс s
     sPointer->arr[0] = 20;// присваеваем 0 элементу массива 20 через указатель

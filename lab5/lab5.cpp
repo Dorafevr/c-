@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cassert>
-int app(std::string_view h) {
+int app(std::string_view h)
+{
     int count = 0;
     int first = 0;
     int other = 0;
@@ -16,16 +17,17 @@ int app(std::string_view h) {
              other++;
          }
      }*/
-    for (int i = 0; i < h.size(); i++) {
+    for (int i = 0; i < h.size(); i++)
+    {
         char c = h[i];
 
-        if (c == '1') {
+        if (c == '1')
+        {
             count++;
         }
-      
     }
     std::cout << "one " << count << std::endl;
-    
+
     return count;
 }
 void runTests()
@@ -35,14 +37,12 @@ void runTests()
     assert(app("111111") == 6);
     assert(app("010011") == 3);
     std::cout << "check";
-
 }
-int main() {
+int main()
+{
 
     std::string_view h = "101011";
     app(h);
     runTests();
     return 0;
-
-
 }
