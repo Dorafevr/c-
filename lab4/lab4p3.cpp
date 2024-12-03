@@ -3,7 +3,7 @@
 #include <array>
 #include <cassert>
 #include <cstddef>
-void product(std::span<int> inputOutput, std::span<int> coefficients)
+void product(std::span<int> inputOutput, std::span<int> coefficients)//int* a+size_t b
 {
     assert(inputOutput.size() == coefficients.size());
     int s = 0;
