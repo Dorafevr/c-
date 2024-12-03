@@ -31,8 +31,6 @@ void runTests() {
     assert(secondWord("a  ") == "");
     assert(secondWord("a  b") == "b");
     assert(secondWord("hello     world    dear") == "world");
-
-    std::cout << "All tests passed!" << std::endl;
 }
 
 int main() {
